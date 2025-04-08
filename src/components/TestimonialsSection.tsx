@@ -32,10 +32,10 @@ const TestimonialsSection = () => {
   ];
 
   const paymentLogos = [
-    { name: "Visa", alt: "Visa logo" },
-    { name: "Mastercard", alt: "Mastercard logo" },
-    { name: "PayPal", alt: "PayPal logo" },
-    { name: "Transferencia Bancaria", alt: "Bank transfer logo" }
+    { name: "Visa", logo: "https://www.logo.wine/a/logo/Visa_Inc./Visa_Inc.-Logo.wine.svg" },
+    { name: "Mastercard", logo: "https://www.logo.wine/a/logo/Mastercard/Mastercard-Logo.wine.svg" },
+    { name: "PayPal", logo: "https://www.logo.wine/a/logo/PayPal/PayPal-Logo.wine.svg" },
+    { name: "Transferencia Bancaria", logo: "https://cdn-icons-png.flaticon.com/512/2830/2830289.png" }
   ];
 
   return (
@@ -99,8 +99,12 @@ const TestimonialsSection = () => {
           <div className="flex flex-wrap justify-center items-center gap-8">
             {paymentLogos.map((logo, index) => (
               <div key={index} className="grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100">
-                <div className="bg-white h-12 px-6 rounded-lg shadow-sm flex items-center justify-center">
-                  <div className="font-medium text-gray-600">{logo.name}</div>
+                <div className="bg-white h-16 px-6 rounded-lg shadow-sm flex items-center justify-center">
+                  <img 
+                    src={logo.logo} 
+                    alt={`${logo.name} logo`} 
+                    className="h-10 w-auto object-contain"
+                  />
                 </div>
               </div>
             ))}
