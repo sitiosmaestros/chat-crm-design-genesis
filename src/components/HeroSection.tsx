@@ -5,7 +5,7 @@ import { MessageCircle, ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden">
+    <section className="relative pt-20 md:pt-24 pb-12 md:pb-16 overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-0 right-0 -z-10 w-1/2 h-full opacity-10">
         <div className="absolute right-0 top-24 w-96 h-96 bg-gradient-to-bl from-crm-accent to-crm-primary rounded-full blur-3xl"></div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
           </p>
           
           {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 animate-fade-up" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10 animate-fade-up" style={{ animationDelay: '0.3s' }}>
             <Button 
               size="lg" 
               className="btn-primary text-base"
@@ -54,7 +54,7 @@ const HeroSection = () => {
             </Button>
           </div>
           
-          {/* Hero image/mockup - UPDATED WITH NEW IMAGE */}
+          {/* Hero image/mockup */}
           <div className="relative mx-auto max-w-4xl overflow-hidden animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <img 
               src="/lovable-uploads/10644dad-75ed-4c82-a0b3-2f5e073c7564.png" 
