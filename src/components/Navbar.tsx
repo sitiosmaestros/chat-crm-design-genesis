@@ -31,8 +31,12 @@ const Navbar = () => {
       <div className="container-section py-0">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <a href="/" className="text-2xl font-bold text-crm-primary">
-              DeClientes<span className="text-crm-accent">CRM</span>
+            <a href="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/7d34a90b-1c56-4f7f-819d-36e8b4df92ec.png" 
+                alt="DeClientes Logo" 
+                className="h-10 md:h-12" 
+              />
             </a>
           </div>
           
