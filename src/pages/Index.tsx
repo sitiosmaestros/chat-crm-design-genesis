@@ -10,6 +10,7 @@ import FaqSection from '@/components/FaqSection';
 import PricingSection from '@/components/PricingSection';
 import ClosingSection from '@/components/ClosingSection';
 import Footer from '@/components/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
         <ClosingSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
